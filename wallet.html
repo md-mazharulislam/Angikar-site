@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--bootstrap@4.6 cdn 4-link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Wallet</title>
+    
+
+    <!--font awesome cdn link-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!--custom css file link-->
+    <link rel="stylesheet" type="text/css" href="wallet.css">
+</head>
+<body>
+    <div class="main">
+        <!--header section strat-->
+        <header class="sticky-top">
+
+            <!--brand section strat-->
+            <nav class="navbar navbar-expand-sm navbar-light">
+                <a href="#" class="logo text-warning">
+                    <i class="fas fa-infinity "> angikar</i>
+                </a> <br>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="fa fa-tmies"></span>
+                </button>
+
+
+                <!--menu bar section strat-->
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="profile.html" class="nav-link">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="home.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="friend.html" class="nav-link">Friend</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="wallet.html" class="nav-link">Wallet</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="login.html" class="nav-link">Log Out</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">About Us</a>
+                        </li>
+                    
+                    </ul>
+                </div>
+                <!--menu bar section end-->
+            </nav>
+            <!--brand section end-->
+        
+        </header>
+        <!--header section end-->
+        <!--Wallet card strat-->
+        <div class="card bg-secondary">
+            
+            <h6>Shopping Card</h6>
+            <h1>Angikar Wallet</h1>
+            <h4 class="d-flex justify-content-center">REWARDS</h4>
+            <h2>Account Holder Name</h2>
+            <!--card number (years, month-date, area_code, user_non)-->
+            <h2 class="d-flex justify-content-around text-oneline">2025 0121 2916 0730</h2>
+        </div>
+        <!--Wallet card end-->
+        <!--progress bar strat-->
+        <h2 class="name m-1">My Progress</h2>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped
+                progress-bar-animated"style="width: 75%;">75%
+            </div>
+        </div>
+        <!--progress bar end-->
+        <!--Wallet money excenge strat-->
+        <div class="name m-1">
+            <h2 class="#">My Balance</h2>
+            <p>7,075.93 (50%)</p>
+        </div>
+        <div class="cryptos m-1">
+            <div class="item-BDT">
+                <h4>Send Money</h4>
+                <div class="price">
+                    <div class="input-group">
+                        <span class="input-group-text rounded-circle .text-danger">৳</span>
+                        <input type="text" class="form-control rounded" aria-label="Amount (to the nearest dollar)"
+                            placeholder="Enter your amount"> <br>
+                            <input type="text" class="form-control rounded gap-5" aria-label=""
+                                placeholder="Enter account number">
+                        <button class="Ok">OK</button>
+                    </div>
+                </div>
+                <h4>Withdo</h4>
+                <div class="price">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text rounded-circle" pla>৳</span>
+                        <input type="text" class="form-control rounded" aria-label="Amount (to the nearest dollar)"
+                            placeholder="Enter your amount of money">
+                        <button class="Ok">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Wallet money excenge strat-->
+
+        <!--News scrolling start-->
+        <div class="news_scrolling fixed-bottom">
+            <div class="news">
+                <p class="text">ধূমপান স্বাস্থ্যের জন্য ক্ষতিকর। ধূমপানের ফলে হার্ট অ্যাটাক, স্ট্রোক, ক্রনিক অবস্ট্রাকটিভ পালমোনারি ডিজিজ (COPD) 
+                    (এমফাইসিমা ও ক্রনিক ব্রংকাইটিস সহ), ও ক্যান্সার (বিশেষত ফুসফুসের ক্যান্সার, প্যানক্রিয়াসের ক্যান্সার, ল্যারিংস ও মুখগহ্বরের ক্যান্সার) 
+                    এর ঝুঁকি বহুগুণ বাড়ায়। তামাক উচ্চ রক্তচাপ ও প্রান্তীয় রক্তনালীর রোগ করতে পারে।</p>
+            </div>
+        </div>
+
+        <script>
+            var style = document.createElement(style);
+            var position = "right";
+        
+            style.innerHTML = @Keyframes my-animation{
+                0%{${position}:-${document.querySelector('.text').offsetWidth + 10}px;}
+                100%{${position}: 100%;}
+            };
+            document.head.append(style)
+        </script>
+        <!--News scrolling end-->
+    </div>
+</body>
+</html>

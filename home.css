@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif; 
+}
+
+body{
+    min-height: 100vh;
+    background: hsla(140, 86%, 48%, 0.753);
+    background-size: cover;
+    background-position: center;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100%;
+}
+
+.logo{
+    font-size: 1.5rem bold;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: green;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, .1);
+}
+
+.navbar a{
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    text-align: right;
+    color: #000;
+    background: green;
+}
+
+.nav{
+    font-size: 1.15rem;
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5rem;
+}
+
+.icons{
+    position: absolute;
+    right: 5%;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+img{
+    border: 1px solid #892c34;
+    background: #892c34;
+    padding: .25rem;
+    width: 150px;
+    height: 150px;
+}
+
+input{
+    width: 150px;
+    outline: none;
+    font-size: 1rem;
+    padding: 10px 40px;
+    border-radius: 50px;
+    border: 2px solid purple;
+    transition: 0.1s ease;
+    align-content: center;
+    justify-content: center;
+    z-index: 1111;
+}
+
+button.Ok{
+    width: 25px;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(90deg, green, #6616d0, #ac34e7);
+    padding: 10px 45px;
+    border-radius: 50px;
+    border: 2px solid purple;
+    margin: 0 15px;
+    font-size: 400;
+    text-decoration: none;
+}
+
+/* device breakpoints strat */
+@media (min-width: 641px) {
+    .header{
+        padding: 1.3rem 5%;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 5rem;
+    }
+
+    .conatnier{
+        display: grid;
+        height: 100%;
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+        grid-gap: 25px;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+@media (max-width: 640px) {
+    .collapse{
+        display: inline-flex;
+    }
+
+    .conatnier{
+        display: grid;
+        height: 50%;
+        grid-template: minmax(100px, 1fr);
+        grid-gap: 25px;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+        padding-bottom: 50px;
+        padding-top: 80px;
+        padding-left: 10px;
+    }
+
+  
+}
+
+/* device breakpoints end */
+
+/* News scrolling start */
+.news{
+    position: relative;
+    height: 30px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: #000;
+    background: orange;
+}
+
+p .text{
+    position: absolute;
+    padding: auto;
+    width: max-content;
+    animation: my-animation 1s linear infinite;
+}
+/* News scrolling end */
